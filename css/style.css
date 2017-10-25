@@ -1,0 +1,73 @@
+html, body {
+  font-size: 25px;
+}
+
+
+/*navbarl*/
+.navbar-default {
+  background-color: white;
+  border-color: black;
+  border-width: thin;
+}
+
+
+.navbar-text-color {
+  color: black;
+}
+
+h1.navbar-text-color {
+  font-family: "Fascinate Inline", cursive;
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+
+ul.nav {
+  margin-right: 2rem;
+  margin-top: 1.2rem;
+
+}
+
+/*main section*/
+.jumbotron {
+  background-image: url(../img/bg-portfolio-art.jpg);
+  background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+  height: 35rem;
+  margin-top: 1rem;
+  opacity: .6;
+}
+
+.main-section {
+  padding: 1.1rem;
+}
+
+.main-section h1 {
+  font-family: "Arbutus", cursive;
+  font-size: 1.5rem;
+}
+
+.main-section img {
+  border: 0.3rem solid black;
+  border-radius: 100%;
+  background-color: ghostWhite;
+  width: 14rem;
+  height: 8.2rem;
+}
+
+.main-section .text-box {
+  margin-top: 2.3rem;
+  padding: .3rem;
+  background-color: darkgray;
+  border: thin solid white;
+  border-radius: 3%;
+}
+
+.main-section .text-box p {
+  font-weight: bold;
+  color: black;
+}
+
+.fa-facebook-official {
+  color: white;
+}

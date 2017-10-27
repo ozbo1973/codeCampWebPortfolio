@@ -24,24 +24,20 @@ html, body {
   background-color: white;
   border-color: black;
   border-width: thin;
-}
-
-
-.navbar-text-color {
   color: black;
 }
 
-h1.navbar-text-color {
+.navbar-text-color {
   font-family: "Fascinate Inline", cursive;
   margin-left: 2rem;
   font-size: 2rem;
 }
 
-ul.nav {
+/*ul.nav {
   margin-right: 2rem;
   margin-top: 1.2rem;
 
-}
+}*/
 
 /*main section*/
 .jumbotron {

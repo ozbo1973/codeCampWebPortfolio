@@ -2,6 +2,22 @@ html, body {
   font-size: 25px;
 }
 
+/*common*/
+.section {
+  margin: 0px;
+}
+.section h1 {
+  font-family: "Arbutus", cursive;
+  font-size: 1.5rem;
+}
+
+.text-box {
+  margin-top: 1.1rem;
+  padding: .3rem;
+  background-color: darkgray;
+  border: thin solid white;
+  border-radius: 3%;
+}
 
 /*navbarl*/
 .navbar-default {
@@ -33,7 +49,7 @@ ul.nav {
   background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-  height: 35rem;
+  height: 25rem;
   margin-top: 1rem;
   opacity: .6;
 }
@@ -42,25 +58,17 @@ ul.nav {
   padding: 1.1rem;
 }
 
-.main-section h1 {
+/*.main-section h1, #projects h1 {
   font-family: "Arbutus", cursive;
   font-size: 1.5rem;
-}
+}*/
 
 .main-section img {
-  border: 0.3rem solid black;
-  border-radius: 100%;
-  background-color: ghostWhite;
+  border: 0.3rem solid darkgray;
+  /*border-radius: 100%;*/
+  background-color: ghostwhite;
   width: 14rem;
   height: 8.2rem;
-}
-
-.main-section .text-box {
-  margin-top: 2.3rem;
-  padding: .3rem;
-  background-color: darkgray;
-  border: thin solid white;
-  border-radius: 3%;
 }
 
 .main-section .text-box p {
@@ -68,6 +76,58 @@ ul.nav {
   color: black;
 }
 
-.fa-facebook-official {
-  color: white;
+/*portfolio*/
+#projects {
+    background-color: ghostwhite;
+}
+
+.img-thumbnail {
+  width: 200px;
+  height: 200px;
+  background-color: gray;
+}
+
+.img-projects {
+  margin-top: 2rem;
+}
+
+.img-projects h3 {
+  font-family: "Fascinate Inline", cursive;
+}
+
+/*contact*/
+#contact {
+  padding-top: 1.2rem;
+  background-color: black;
+}
+
+#contact h1 {
+  color: ghostwhite;
+}
+
+.social {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: thin solid darkgray;
+}
+
+#contact .fa  {
+  color: ghostwhite;
+}
+#contact .labels {
+  margin: 1.5rem;
+}
+
+#contact p {
+  background-color: ghostwhite;
+}
+
+/*other hobbies*/
+#other-hobbies {
+  padding-top: 1rem;
+}
+
+.hobby-icons {
+  margin-top: 1rem;
 }

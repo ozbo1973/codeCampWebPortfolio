@@ -1,10 +1,21 @@
 html, body {
-  font-size: 25px;
+  font-size: 20px;
+  background-color: lightgray;
 }
 
 /*common*/
+textarea {
+  width: 85%;
+}
+
+form {
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
 .section {
   margin: 0px;
+  background-color: ghostwhite;
 }
 .section h1 {
   font-family: "Arbutus", cursive;
@@ -19,6 +30,7 @@ html, body {
   border-radius: 3%;
 }
 
+
 /*navbarl*/
 .navbar-default {
   background-color: white;
@@ -27,49 +39,40 @@ html, body {
   color: black;
 }
 
-.navbar-text-color {
+.navbar-brand {
   font-family: "Fascinate Inline", cursive;
   margin-left: 2rem;
   font-size: 2rem;
 }
 
-/*ul.nav {
-  margin-right: 2rem;
-  margin-top: 1.2rem;
-
-}*/
 
 /*main section*/
 .jumbotron {
   background-image: url(../img/bg-portfolio-art.jpg);
   background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
-  height: 25rem;
+	background-position:center;
   margin-top: 1rem;
   opacity: .6;
 }
 
 .main-section {
-  padding: 1.1rem;
+  text-align: center;
+  padding: 1.5rem;
 }
-
-/*.main-section h1, #projects h1 {
-  font-family: "Arbutus", cursive;
-  font-size: 1.5rem;
-}*/
 
 .main-section img {
   border: 0.3rem solid darkgray;
-  /*border-radius: 100%;*/
   background-color: ghostwhite;
-  width: 14rem;
-  height: 8.2rem;
 }
 
+.main-section .text-box {
+  background-color: black;
+}
 .main-section .text-box p {
   font-weight: bold;
-  color: black;
+  color: white;
+  font-size: .8rem;
 }
 
 /*portfolio*/
@@ -101,11 +104,22 @@ html, body {
   color: ghostwhite;
 }
 
+#contact .text-box {
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 85%;
+}
+
 .social {
   margin-top: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-top: thin solid darkgray;
+}
+
+.social-header {
+  color: white;
+  font-size: 1.2rem;
 }
 
 #contact .fa  {

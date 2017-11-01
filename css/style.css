@@ -22,7 +22,7 @@ form {
 .section {
   margin: 0px;
   padding-top: 2.2rem;
-  height: 35rem;
+  /*height: 35rem;*/
   background-color: ghostwhite;
 }
 .section h1 {
@@ -56,7 +56,7 @@ form {
 
 /*main section*/
 .jumbotron {
-  background-image: url(../img/bg-portfolio.jpg);
+  background-image: url(../img/bg-portfolio-bw.jpg);
   background-repeat: no-repeat;
 	background-size: cover;
 	background-position:center;
@@ -76,8 +76,9 @@ form {
 
 .main-section .text-box {
   background-color: black;
-  margin-top: 3rem;
+  /*margin-top: 1rem;*/
 }
+
 .main-section .text-box p {
   font-weight: bold;
   color: white;
@@ -90,10 +91,14 @@ form {
 }
 
 .img-thumbnail {
-  width: 200px;
-  height: 200px;
+  width: 10rem;
+  height: 10rem;
   background-color: gray;
 }
+
+/*.img-thumbnail:hover {
+  cursor: pointer;
+}*/
 
 .img-projects {
   margin-top: 2rem;
@@ -143,14 +148,35 @@ form {
 }
 
 /*other hobbies*/
-#other-hobbies {
-  height: 15rem;
-}
 
+#other-hobbies span {
+  font-size: .4rem;
+}
 .hobby-icons {
   margin-top: 1rem;
 }
 
 .hobby-icons .fa{
   padding: 1rem;
+}
+
+
+
+/*desktop*/
+@media only screen and (min-width:992px) {
+  .section {
+    height: 35rem;
+  }
+
+  .main-section .text-box {
+    margin-top: 3rem;
+  }
+
+  #other-hobbies {
+    height: 15rem;
+  }
+
+  #other-hobbies span {
+    font-size: 1rem;
+  }
 }

@@ -1,53 +1,20 @@
 $(document).ready(function() {
 
+  // handle thumbnail hover
+  $('#projects .img-thumbnail').hover(function(){
+    $(this).css('cursor','pointer').css('background-color','black');
+    $(this).attr('src',$(this).data('swap_img'));
+  }, function(){
+    $(this).css('background-color','gray');
+    $(this).attr('src',$(this).data('swap_img').replace(/\_tn.jpg/,'-bw_tn.jpg'));
+  });
 
-  // handle click on the navbar
-  // $('#myNavbar a').click(function() {
-  //   console.log('yes');
-  //   $('#myNavbar ul li').each(function(){
-  //     $(this).removeClass('active');
-  //   })
-  //   $(this).parent().addClass("active");
-  // })
-// ./ navbar click
+  //handle project thumbnail clicks
+  $('#projects .img-thumbnail').click(function(){
+    var link = $(this).data('lnk');
+    window.open(link);
+  })
+// ./ img-thumbnail click
 
-$(document).on("scroll", onScroll);
-    // 'a[href^="#"]'
-    //smoothscroll
-    $('#myNavbar li a').on('click', function (e) {
-        e.preventDefault();
-        $(document).off("scroll");
-
-        $('#myNavbar li').each(function () {
-            $(this).removeClass('active');
-        })
-        $(this).parent().addClass('active');
-
-        var target = this.hash,
-            menu = target;
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top+2
-        }, 500, 'swing', function () {
-            window.location.hash = target;
-            $(document).on("scroll", onScroll);
-        });
-    });
-// });
-
-function onScroll(event){
-    var scrollPos = $(document).scrollTop();
-    $('#myNavbar li a').each(function () {
-        var currLink = $(this);
-        var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('#myNavbar ul li a').parent().removeClass("active");
-            currLink.parent().addClass("active");
-        }
-        else{
-            currLink.parent().removeClass("active");
-        }
-    });
-
-}});
+});
 // end doc ready
